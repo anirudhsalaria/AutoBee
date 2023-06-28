@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 const SearchManufacturer = ({manufacturer, setManufacturer}: SearchManufacturerProps) => {
-    const [query, setQuery] = useState('')
+    const [query, setQuery] = useState('');
 
   return (
     <div className='search-manufacturer'>
@@ -17,13 +17,13 @@ const SearchManufacturer = ({manufacturer, setManufacturer}: SearchManufacturerP
                     src="/car-logo.svg"
                     width={20}
                     height={20}
-                    alt='Car Logo'
                     className='ml-4'
+                    alt='Car Logo'
                 />
             </Combobox.Button>
 
             <Combobox.Input 
-                className="seacrh-manufacturer__input"
+                className="search-manufacturer__input" 
                 placeholder='Volkswagen'
                 displayValue={(manufacturer: string) => manufacturer}
                 onChange={(e) => setQuery(e.target.value)}
