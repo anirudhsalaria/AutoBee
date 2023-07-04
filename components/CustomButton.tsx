@@ -2,7 +2,7 @@ import { CustomButtonProps } from "@/types";
 import Image from "next/image";
 "use client";
 
-const CustomButton = ({title, containerStyles, handleClick, btnType}: CustomButtonProps) => {
+const CustomButton = ({ title, containerStyles, handleClick, btnType }: CustomButtonProps) => {
   return (
     <div>
       <button
@@ -12,7 +12,7 @@ const CustomButton = ({title, containerStyles, handleClick, btnType}: CustomButt
         onClick={handleClick}
       >
         <span className={"flex-1"}>
-            {title}
+          {title}
         </span>
       </button>
     </div>
